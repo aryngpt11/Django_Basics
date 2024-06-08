@@ -5,7 +5,7 @@ from django.http import HttpResponse
 
 
 def fee_django(request):
-    return HttpResponse("<h1> 10000</h1>")
+    return render(request,'feesone.html',context={'fe':'FeeDjango'})
 
 def fee_python(request):
     return HttpResponse("<h1> 20000</h1>")
