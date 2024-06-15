@@ -1,5 +1,5 @@
 """
-WSGI config for tempinheritance project.
+WSGI config for tempinherit project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tempinheritance.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tempinherit.settings')
 
 application = get_wsgi_application()
