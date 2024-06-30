@@ -12,14 +12,39 @@
 </head>
 <body>
     <h1>Student PAge</h1>
-    <h3>{{stu}}</h3>
+    
+
+    
 
     {% if stu %}
     <h1>show data</h1>
     {% else %}
     <h1>No Data</h1>
-    {% endif %}
+    {% endif %} 
     <table>
+        <tr>
+            <th>ID</th>
+            <th>Student_ID</th>
+            <th>Student_Name</th>
+            <th>Student_Email</th>
+            <th>Student_Pass</th>
+        </tr>
+        
+        <tr>
+            <td>{{stu.id}}</td>
+            <td>{{stu.stuid}}</td>
+            <td>{{stu.stuname}}</td>
+            <td>{{stu.stuemail}}</td>
+            <td>{{stu.stupass}}</td>
+        </tr>
+         
+    </table>
+    {% if stu %}
+    <h1>show data</h1>
+    {% else %}
+    <h1>No Data</h1>
+    {% endif %} -->
+    <!-- <table>
         <tr>
             <th>ID</th>
             <th>Student_ID</th>
@@ -35,16 +60,7 @@
             <td>{{s.stuemail}}</td>
             <td>{{s.stupass}}</td>
         </tr>
-        {% endfor %}
+        {% endfor %} 
     </table>
-
-    
-    
-    
-    
-    
-    
-    
-
 </body>
 </html>
