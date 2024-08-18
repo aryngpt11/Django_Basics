@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registartion</title>
+</head>
+<body>
+    <form action="" method="get">
+        <div><label for="id_name">Name:</label>
+            <input type="text" name="name" required id="id_name">
+        </div>
+
+        <div><label for="{{form.name.id_for_label}}">Name:</label>
+            {{form.name}}
+            <input type="text" name="name" required id="id_name">
+        </div>
+    </form>
+    
+    
+</body>
+</html> 
